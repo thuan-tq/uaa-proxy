@@ -1,0 +1,67 @@
+<html><head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic">
+
+    <!-- App Icons -->
+    <link rel="apple-touch-icon" href="/touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Sign-In - Digital Demo Lounge</title>
+  <link href="/resources/predix/stylesheets/bundle.4a468.css" rel="stylesheet"></head>
+  <link href="/resources/predix/stylesheets/login.css" rel="stylesheet"></head>
+
+  <body>
+    <div id="app">
+      <div data-reactroot="">
+        <div class="main-container--content--1CGTM"><div>
+        <div class="tabbed-pane--tabbed-pane--oXofA">
+          <div class="tabbed-pane--tabs--28PT6">
+            <div class="tabbed-pane--tab-selected--3hj7D tabbed-pane--_tab--3YIY3">Digital Demo Lounge</div>
+          </div>
+          <div class="tabbed-pane--content--2o3OQ">
+            <div>
+              <div>
+                <div class="form--header--r6_0T">Log Into Your Account</div>
+                <div class="form--description--1ypWt"></div>
+                <div class="form--alerts--2ACem">
+                  <div class="alert--success--1kPKM alert--_alert--1gt-I alert--hidden--2Mlfp"></div>
+                  <div class="alert--error--3iAkS alert--_alert--1gt-I alert--hidden--2Mlfp"></div>
+                </div>
+                <form method="post" novalidate="novalidate" accept-charset="UTF-8" action="/login.do">
+                  <div class="form--form--vx8k8">
+                  <div class="form-group">
+
+                    <input type="text" placeholder="Username" class="ureact-text-input--text-input--10NET undefined" name="username"></div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Password" class="ureact-text-input--text-input--10NET undefined" name="password"></div>
+                    </div>
+                    <input type="hidden" name="X-Uaa-Csrf" value="aLMVNpb0k0Ve4ZQ4Ua5ZAU" />
+                    <button type="button" class="ureact-button--primary--2Z4W9 ureact-button--_btn--2nt_i ureact-button--normal--1kWMU form--primary-button--1NgrB" style="cursor: pointer;">Sign In</button>
+
+                </form>
+              </div>
+              <br>
+              <hr>
+            <div>
+            <div class="index--description--113WL">or sign in with one of these services</div>
+            <div class="index--buttons--1r2XL">
+            <button type="button" onclick='goto("saml/discovery?returnIDParam=idp&amp;entityID=uaa-ddl-sandbox.cloudfoundry-saml-login&amp;idp=gesso&amp;isPassive=true")' class="ureact-button--secondary--2oU3S ureact-button--_btn--2nt_i ureact-button--normal--1kWMU _provider-button--provider-button--6VDst" style="cursor: pointer;">
+              <div class="_provider-button--label--3kTNo">
+                <img src="/resources/predix/images/logo6060.png">GE SSO</div> 
+            </button>
+            <button type="button" onclick='goto("saml/discovery?returnIDParam=idp&amp;entityID=uaa-ddl-sandbox.cloudfoundry-saml-login&amp;idp=sfgecommunity&amp;isPassive=true")' class="ureact-button--secondary--2oU3S ureact-button--_btn--2nt_i ureact-button--normal--1kWMU _provider-button--provider-button--6VDst" style="cursor: pointer;"><div class="_provider-button--label--3kTNo">
+            <img src="/resources/predix/images/salesforce-48.png"> GE Alliance Partner</div></button>
+            </div></div></div></div></div>
+            <noscript></noscript>
+            </div></div></div></div>
+        <div class="ReactModalPortal"><div data-reactroot=""></div></div>
+</body>
+<script type="text/javascript">
+  function goto(url) {
+    window.location = url;
+  }
+
+</script>
+</html>

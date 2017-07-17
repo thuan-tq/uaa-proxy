@@ -1,0 +1,14 @@
+---
+applications:
+  - name: b3ad23f1-36e5-437c-9212-5e00dcdac3ec-predix-uaa
+    memory: 128M
+    timeout: 180
+    buildpack: nodejs_buildpack
+    command: node server/app.js
+    path: dist
+env:
+    node_env: cloud
+    UAA_URI: https://uaa-ddl-sandbox.predix-uaa.run.aws-usw02-pr.ice.predix.io
+    PROXY_URI: https://b3ad23f1-36e5-437c-9212-5e00dcdac3ec-predix-uaa.run.aws-usw02-pr.ice.predix.io
+    SAML_SP_ENTITY_ID: uaa-ddl-sandbox.cloudfoundry-saml-login
+    
